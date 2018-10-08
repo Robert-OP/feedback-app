@@ -10,16 +10,22 @@ module.exports = app => {
   );
 
   // route handler that matches the code with google in order to get the user info [profile, email]
-  app.get("/auth/google/callback", passport.authenticate("google"));
+  app.get(
+    "/auth/google/callback",
+    passport.authenticate("google"),
+    (req, res) => {
+      res.redirect("/surveys");
+    }
+  );
 
   app.get("/api/logout", (req, res) => {
     req.logout();
-    res.send(req.user);
+    res.redirect("/");
   });
 
   // look to check which user is logged in
   app.get("/api/current_user", (req, res) => {
-    // res.send(req.session );
+    // res.send(req.session);
     res.send(req.user);
   });
 };
