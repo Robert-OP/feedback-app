@@ -39,9 +39,12 @@ if (process.env.NODE_ENV === "production") {
   // app.get("*", (req, res) => {
   //   res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   // });
-  app.get("/", (req, res) => {
+  app.get("/*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   });
+  // app.get("/surveys", (req, res) => {
+  //   res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  // });
 }
 
 // for production look for the port heroku lets us use, otherwise use port 5000 for development
