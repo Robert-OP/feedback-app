@@ -5,6 +5,7 @@ const passport = require("passport");
 const bodyParser = require("body-parser");
 const keys = require("./config/keys");
 require("./models/User");
+require("./models/Survey");
 require("./services/passport");
 
 mongoose.connect(keys.mongoURI);
@@ -25,6 +26,7 @@ app.use(passport.session());
 // connected to the arrow function in authRoutes & payRoutes
 require("./routes/authRoutes")(app);
 require("./routes/payRoutes")(app);
+require("./routes/surveyRoutes")(app);
 
 // ran only in production (heroku)
 if (process.env.NODE_ENV === "production") {
@@ -36,15 +38,9 @@ if (process.env.NODE_ENV === "production") {
     kick the user to the client-side of the app 
   */
   const path = require("path");
-  // app.get("*", (req, res) => {
-  //   res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
-  // });
   app.get("/*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   });
-  // app.get("/surveys", (req, res) => {
-  //   res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
-  // });
 }
 
 // for production look for the port heroku lets us use, otherwise use port 5000 for development
