@@ -1,9 +1,10 @@
 # feedback-app
 
-Node + React: Fullstack Web Development
+## Node + React: Fullstack Web Development
 
-Back-end: [NodeJS](https://nodejs.org/en/), [ExpressJS](https://expressjs.com/), [PassportJS](http://www.passportjs.org/), [MongoDB](https://www.mongodb.com/), [MongooseJS](https://mongoosejs.com/)
-Front-end: '/client/'
+### Back-End: [NodeJS](https://nodejs.org/en/), [ExpressJS](https://expressjs.com/), [PassportJS](http://www.passportjs.org/), [MongoDB](https://www.mongodb.com/), [MongooseJS](https://mongoosejs.com/)
+
+### Check Front-End inside '/client/'
 
 1. Enhanced authentication flows with [Google OAuth authentication](https://developers.google.com/identity/protocols/OAuth2)
 

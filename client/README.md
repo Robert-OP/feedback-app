@@ -1,8 +1,8 @@
 # feedback-app
 
-Node + React: Fullstack Web Development
+## Node + React: Fullstack Web Development
 
-Front-end: [ReactJS](https://reactjs.org/), [ReduxJS](https://redux.js.org/), [React Router](https://reacttraining.com/react-router/), [MaterializeCSS](https://materializecss.com/)
+### Front-end: [ReactJS](https://reactjs.org/), [ReduxJS](https://redux.js.org/), [React Router](https://reacttraining.com/react-router/), [MaterializeCSS](https://materializecss.com/)
 
 1. Connect the front-end create-react-app server to a NodeJS and Express back-end
 
