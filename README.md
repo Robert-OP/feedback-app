@@ -8,7 +8,7 @@
 
 1. Enhanced authentication flows with [Google OAuth authentication](https://developers.google.com/identity/protocols/OAuth2)
 
-2. Communicate data from MongoDB to the React application
+2. Communicate data from MongoDB to the [React application](https://github.com/Robert-OP/feedback-app/tree/master/client)
 
 3. Handle credit cards and receive payments from users with [Stripe](https://stripe.com/)
 
